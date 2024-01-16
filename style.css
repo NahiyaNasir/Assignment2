@@ -6,12 +6,12 @@
  .container{
     margin: 0 auto;
     border: 2px solid red;
-    max-width: 14400vh;
+    max-width: 1440px;
    
  }
  /*nav style  start*/
  header{
-  max-width: 1440px;
+  /*max-width: 1440px;*/
   margin: auto;
  }
   nav{
@@ -249,20 +249,20 @@ justify-content: center;
  /*container1*/
   .container1{
    border: 2px seagreen solid;
-   margin: 0 auto;
-   display: flex;
-   flex-wrap: wrap;
-   padding: 20px 25px ;
+   display: grid;
+   grid-template-columns:  450px 450px;
+   
    justify-content: center;
+  
  
    gap: 10px;
   }
   .card1{
    background-color:   rgba(251, 181, 99, 0.05);
    border: 2px sienna solid;
-  
+    
    height: 200px;
-   align-items: center;
+  
   padding: 10px;
   }
   .card2{
@@ -270,10 +270,18 @@ justify-content: center;
     border: 2px sienna solid;
     
     height: 200px;
-    align-items: center;
+   
     padding: 10px;
    }
-   
+
+   .card3{
+   background-color:   rgba(251, 181, 99, 0.05);
+   border: 2px sienna solid;
+ align-items: center;
+   height: 200px;
+  
+  padding: 10px;
+  }
 /*container1*/
    /*des*/
    .photo{
@@ -293,6 +301,10 @@ justify-content: center;
  color: rgba(255, 255, 255, 1);
  font-size: 1.5rem;
  
+  }
+  .clas img{
+    height: 400px;
+    width: 100%;
   }
   .des h1{
     line-height: 30px;
@@ -319,7 +331,7 @@ justify-content: center;
   /*disscount*/
   
   .disscount{
-    margin: 0 auto;
+   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,14 +339,15 @@ justify-content: center;
   }
   .disscount-img{
     position: relative;
-   width: 40%;
+  /* height: 300px;*/
+   width: 100%;
    
   }
 
   
   .position{
-    width: 320px;
-    height: 30px;
+  /* width: 320px;*/
+    height: 50px;
     background-color: #FF5400;
     color: aliceblue;
     border-radius: 5px;
@@ -360,10 +373,10 @@ justify-content: center;
   }
   .email{
     border: 1px solid #FF5400;
-   
-    height: 400px;
-    border-radius: 18px;
-      width: 30%;
+    width: 70%;
+   height: 400px;
+    border-radius: 12px;
+      
       text-align: center;
      
     
@@ -431,7 +444,9 @@ font-size: 1rem;
       flex-direction: column;
       width: 100%;
     }
-    .ul>li
+    .ul>li ,
+    .disscount,
+    .photo
    {
       flex-direction: column;
     }
@@ -440,7 +455,11 @@ font-size: 1rem;
     margin: 0 auto;
     height: auto;
   }
+ .position{
+  height: 30px;
+ }
 
+ 
   .banner-heading{
     font-size: 2rem;
   }
@@ -466,6 +485,21 @@ font-size: 1rem;
     .popular-section{
       flex-direction: column;
     }
-   
-   
+    .popular-img img{
+      width: 100%;
+    }
+   .disscount-img img{
+    width: 100%;
+   }
+   .email{
+    width: 80%;
+   }
+   .box1 img,
+   .box2 img,
+    .box3 img{
+      width: 100%;
+    }
+    .container1{
+      grid-template-columns: repeat(1, 1fr);
+    }
    }
