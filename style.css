@@ -5,7 +5,7 @@
  }
  .container{
     margin: 0 auto;
-    border: 2px solid red;
+   /* border: 2px solid red;*/
     max-width: 1440px;
    
  }
@@ -40,7 +40,7 @@
  /*nav style end*/
  /*banner style start*/
  .banner-section{
-   border: 2px solid blue;
+  /* border: 2px solid blue;*/
   
    height: 500px;
   margin: 140px  135px;
@@ -76,6 +76,7 @@
  color: #424247;
 /* height: 52px;*/
  margin-top: 10px;
+
  
  
 }
@@ -248,7 +249,7 @@ justify-content: center;
 /*destination style end*/
  /*container1*/
   .container1{
-   border: 2px seagreen solid;
+  /* border: 2px seagreen solid;*/
    display: grid;
    grid-template-columns:  450px 450px;
    
@@ -259,7 +260,7 @@ justify-content: center;
   }
   .card1{
    background-color:   rgba(251, 181, 99, 0.05);
-   border: 2px sienna solid;
+ /*  border: 2px sienna solid;*/
     
    height: 200px;
   
@@ -267,7 +268,7 @@ justify-content: center;
   }
   .card2{
     background-color: rgba(41, 206, 246, 0.05);
-    border: 2px sienna solid;
+   /* border: 2px sienna solid;*/
     
     height: 200px;
    
@@ -276,7 +277,7 @@ justify-content: center;
 
    .card3{
    background-color:   rgba(251, 181, 99, 0.05);
-   border: 2px sienna solid;
+  /* border: 2px sienna solid;*/
  align-items: center;
    height: 200px;
   
@@ -412,7 +413,7 @@ font-size: 1rem;
 
      /*fotter*/
      .fotter{
-      margin: 0 auto;
+      
       text-align: center;
       background-color:rgba(19, 19, 24, 0.05);
      height: 400px;
