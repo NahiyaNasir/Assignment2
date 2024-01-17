@@ -23,6 +23,7 @@
    
    
   }
+ 
  nav >  ul{
    display: flex;
    gap: 20px;
@@ -31,6 +32,7 @@
  }
  .ul li {
    list-style: none;
+
  }
 
  li a{
@@ -251,15 +253,21 @@ justify-content: center;
   .container1{
   /* border: 2px seagreen solid;*/
    display: grid;
-   grid-template-columns:  450px 450px;
-   
+   grid-template-columns:  450px 450px ;
    justify-content: center;
-  
- 
    gap: 10px;
+   margin-top: 10px;
+  }
+  .div2 h1, p{
+ text-align: center;
+ margin-top: 10px;
+  }
+  .div2 p{
+    color: #424247;
+    text-shadow: 1px 1px 2px #131318;
   }
   .card1{
-   background-color:   rgba(251, 181, 99, 0.05);
+   background-color:  peachpuff;
  /*  border: 2px sienna solid;*/
     
    height: 200px;
@@ -267,7 +275,7 @@ justify-content: center;
   padding: 10px;
   }
   .card2{
-    background-color: rgba(41, 206, 246, 0.05);
+    background-color:paleturquoise;
    /* border: 2px sienna solid;*/
     
     height: 200px;
@@ -276,14 +284,21 @@ justify-content: center;
    }
 
    .card3{
-   background-color:   rgba(251, 181, 99, 0.05);
+   background-color: powderblue;
   /* border: 2px sienna solid;*/
- align-items: center;
+
    height: 200px;
   
   padding: 10px;
   }
+  .div1{
+    transform: translateX(50%);
+  }
 /*container1*/
+/*deals*/
+ .opt1{
+  background-color:  rgba(255, 255, 255, 1);
+ }
    /*des*/
    .photo{
     display: flex;
@@ -445,7 +460,13 @@ font-size: 1rem;
       flex-direction: column;
       width: 100%;
     }
-    .ul>li ,
+    .ul{
+    display: block;
+    }
+   .bar{
+      visibility: visible;
+    }
+    /*.ul>li ,*/
     .disscount,
     .photo
    {
@@ -502,5 +523,8 @@ font-size: 1rem;
     }
     .container1{
       grid-template-columns: repeat(1, 1fr);
+    }
+    .div1{
+      transform: none;
     }
    }
